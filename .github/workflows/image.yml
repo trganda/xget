@@ -2,22 +2,8 @@ name: Build and Push Image
 
 on:
   push:
-    branches:
-      - main
-      - develop
     tags:
       - 'v*'
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
-      - 'test/**'
-      - 'scripts/**'
-      - '.gitignore'
-      - '.editorconfig'
-      - 'LICENSE'
-  pull_request:
-    branches:
-      - main
     paths-ignore:
       - '**.md'
       - 'docs/**'
